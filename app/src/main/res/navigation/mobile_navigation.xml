@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_fragment1">
+
+    <fragment
+        android:id="@+id/nav_fragment1"
+        android:name="study.my.menunavigation.ui.fragments.fragment1.Fragment1"
+        android:label="Fragment1"
+        tools:layout="@layout/fragment1" >
+        <action
+            android:id="@+id/action_nav_fragment1_to_nav_fragment2"
+            app:destination="@id/nav_fragment2" />
+        <action
+            android:id="@+id/action_nav_fragment1_to_nav_fragment3"
+            app:destination="@id/nav_fragment3" />
+        <action
+            android:id="@+id/action_nav_fragment1_to_nav_fragment4"
+            app:destination="@id/nav_fragment4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_fragment2"
+        android:name="study.my.menunavigation.ui.fragments.fragment2.Fragment2"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment2" />
+
+    <fragment
+        android:id="@+id/nav_fragment3"
+        android:name="study.my.menunavigation.ui.fragments.fragment3.Fragment3"
+        android:label="Fragment3"
+        tools:layout="@layout/fragment3" />
+
+    <fragment
+        android:id="@+id/nav_fragment4"
+        android:name="study.my.menunavigation.ui.fragments.fragment4.Fragment4"
+        android:label="Fragment4"
+        tools:layout="@layout/fragment4" />
+</navigation>
